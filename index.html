@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wong Pei Ting</title>
+
+    <!-- JetBrains Mono (Google Fonts). No analytics. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --text: #2e00c5;
+        --text-strong: #9d9d9d;
+        --outline: #958ee4;
+        --bg: #ffffff;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+          "Courier New", monospace;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      main {
+        margin: 5rem 0; /* my-20 */
+        display: grid;
+        justify-content: center;
+      }
+      .wrap {
+        width: min(28rem, 90vw);
+        display: grid;
+        gap: 1.25rem; /* space-y-5 */
+      }
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+      h1 {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+      }
+      h1 strong {
+        font-weight: 700;
+      }
+      h2 {
+        margin: 0;
+        font-size: 1.5rem; /* text-2xl */
+        color: var(--text-strong);
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .links > div::after {
+        content: " ·";
+      }
+
+      .links > div:last-child::after {
+        content: "";
+      }
+
+      .cards {
+        display: grid;
+        gap: 2.5rem; /* space-y-10 */
+      }
+      .card {
+        display: grid;
+        gap: 1rem; /* space-y-4 */
+        padding: 1rem;
+        border-radius: 0.375rem; /* rounded-md */
+        outline: 1px solid var(--outline);
+        text-decoration: none;
+      }
+      .card img,
+      .card video {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0.25rem;
+      }
+
+      .card .subtitle {
+        font-size: 0.85rem;
+        line-height: 1.35;
+        color: #9ca3af; /* keep the same muted gray */
+      }
+
+      .card .carousel {
+        display: flex;
+        gap: 0.75rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.25rem;
+      }
+
+      .card .carousel > img {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0.25rem;
+      }
+
+        /* optional: hide scrollbar */
+        .card .carousel {
+        scrollbar-width: none;
+        }
+        .card .carousel::-webkit-scrollbar {
+        display: none;
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="wrap">
+        <h1><strong>Wong Pei Ting</strong> is a journalist from Singapore. She enjoys telling people stories and was the first to present an in-depth look at <a href="https://medium.com/@TODAYonline/confused-and-dejected-stateless-persons-plead-to-be-called-singaporeans-1f6787a8451b">how stateless people lived in Singapore</a>. These days, she is fascinated by what data can do to augment reporting. Her explorations have led to <a href="https://www.straitstimes.com/singapore/politics/inside-singapore-parliaments-record-setting-14th-term">this round-up</a> of Singapore's record-breaking 14th term of Parliament, and <a href="https://wongpeiting.github.io/wtf_flat_alert_system/">this auto-updating site</a> that reveals the month's most outrageous public housing transactions, among others. She is currently a data journalism student at Columbia University. She returns to The Straits Times in August 2026.</h1>
+
+        <div class="links">
+          <div><a href="https://github.com/wongpeiting">GitHub</a></div>
+          <div><a href="https://www.linkedin.com/in/wongpeiting/">LinkedIn</a></div>
+          <div><a href="https://www.straitstimes.com/authors/wong-pei-ting">The Straits Times</a></div>
+          <div><a href="https://www.businesstimes.com.sg/authors/wong-pei-ting">The Business Times</a></div>
+          <div><a href="https://www.todayonline.com/authors/wong-pei-ting">TODAY</a></div>
+          <div><a href="mailto:wongpeiting@sph.com.sg">Email</a></div>
+        </div>
+
+        <h2>Recent & Selected</h2>
+
+        <div class="cards">
+
+            <a class="card" href="https://www.straitstimes.com/singapore/politics/inside-singapore-parliaments-record-setting-14th-term">
+            <div class="carousel" aria-label="Parliament analysis">
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/parl1.png?raw=true" alt="Parliament infographic" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/parl2.png?raw=true" alt="Participation-o-meter" />
+            </div>
+            <div>More questions asked, more ministerial statements: Inside Singapore Parliament's record-setting 14th term</div>
+            <div class="subtitle">A distillation of how People's Action Party backbenchers and opposition Members of Parliament performed at their jobs to question and debate, and how they did compared to past terms.</div>
+          </a>
+
+            <a class="card" href="https://www.instagram.com/straits_times/p/DII_GCdMEKM/?img_index=1">
+            <div class="carousel" aria-label="GE2025 battleground analysis">
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/battleground1.png?raw=true" alt="The most heartland areas" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/battleground2.png?raw=true" alt="Where there are more private properties" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/battleground3.png?raw=true" alt="Where the Gen Z and millennial voters are" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/battleground4.png?raw=true" alt="Where the first-time voters are" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/battleground5.png?raw=true" alt="Where Gen X and baby boomers are" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/battleground6.png?raw=true" alt="Where the young families are" />
+            </div>
+            <div>GE2025: Which constituency is the most 'heartland' and where are the first-time voters?</div>
+            <div class="subtitle">A pre-election analysis of how battlegrounds shaped up, with stats collated less than 48 hours after electoral boundaries were redrawn.</div>
+          </a>
+
+          <a class="card" href="https://www.straitstimes.com/singapore/ge2025-with-a-more-discerning-electorate-smaller-opposition-parties-face-an-uncertain-future">
+            <div class="carousel" aria-label="GE2025 analysis">
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/GE2025_results1.png?raw=true" alt="WP pulls away from the rest" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/GE2025_results2.png?raw=true" alt="A closer look at the wipeouts" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/GE2025_results3.png?raw=true" alt="The price of defeat" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/GE2025_results4.png?raw=true" alt="PAP secured over 75% of the vote in 10 constituencies" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/GE2025_results5.png?raw=true" alt="Independents were more popular than some parties" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/GE2025_results6.png?raw=true" alt="Poorest results" />
+            </div>
+            <div>GE2025: With a more discerning electorate, smaller opposition parties face an uncertain future</div>
+            <div class="subtitle">A post-election analysis showing that Singapore is moving towards a two-party system, making the road ahead increasingly challenging for smaller players striving for a slice of the electoral pie.</div>
+          </a>
+
+          <a class="card" href="https://www.straitstimes.com/multimedia/graphics/2025/02/pritam-singh-trial-catchphrases/index.html">
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/pritam_interactive1.png?raw=true" alt="Pritam trial thumbnail" />
+            <div>13 days, 13 phrases: How the Pritam trial unfolded</div>
+            <div class="subtitle">Key exchanges in one of Singapore's most watched trial. A condensation of 677 pages of court transcripts, 352 pages of prosecution and defence submissions, and 150 pages of court verdict.</div>
+          </a>
+
+          <a class="card" href="https://wongpeiting.github.io/wtf_flat_alert_system/">
+            <div class="carousel" aria-label="Parliament analysis">
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/wtf_radar1.png?raw=true" alt="A seismograph for the transactions that make you go “WTF”… as in What's This Flat?" />
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/wtf_radar2.png?raw=true" alt="The city-state's newest home resale oddballs." />
+            </div>
+            <div>The WTF flat alert system</div>
+            <div class="subtitle">A playful take at creating a useful site that updates itself daily to surface Singapore's newest home resale oddballs based on a self-devised algorithm. (The algorithm is a work-in-progress.)</div>
+          </a>
+
+          <a class="card" href="https://www.businesstimes.com.sg/international/singapores-top-students-gunning-courses-hot-sectors-analytics-food-science-and">
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/talentflows.png?raw=true" alt="Accountancy and chemical engineering no longer the preferred tracks at local universities" />
+            <div>Singapore's top students gunning for courses in hot sectors of analytics, food science and environment</div>
+            <div class="subtitle">An analysis of Singapore universities' indicative grade profiles to visualise the change in interest towards accountancy, chemical engineering and aerospace engineering - courses where prospective students once faced stiff competition for places.</div>
+          </a>
+
+          <a class="card" href="https://www.straitstimes.com/singapore/cappuccino-papaya-and-people-what-fuels-pope-francis-on-his-historic-12-day-asia-pacific-tour">
+            <img src="https://cassette.sphdigital.com.sg/image/straitstimes/00becb55923b296f3904632c72999cd153d82da6cdbd16db2ab764c40d24fea0?w=900" alt="Pope Francis waving to the faithful after leading mass at the Esplanade of Tasitolu in Dili on Sept 10. PHOTO: AFP" />
+            <div>Cappuccino, papaya and people: What fuels Pope Francis on his historic 12-day Asia-Pacific tour</div>
+            <div class="subtitle">A scoop whilst onboard the papal flight as Pope Francis embarked on his historic 12-day Asia-Pacific tour in 2024. An insider look at how the then-87-year-old pontiff was managing the longest trip he has taken out of Vatican City.</div>
+          </a>
+
+          <a class="card" href="https://www.businesstimes.com.sg/opinion-features/jurong-island-search-new-miracle">
+            <img src="https://github.com/wongpeiting/Portfolio/blob/main/content/bigboys.png?raw=true" alt="At least 25 of the players on Jurong Island are among the world's 50 largest chemical companies, leading oil giants and tank terminal operators, or are these giants' units or joint ventures." />
+            <div>Jurong Island: In search of a new miracle</div>
+            <div class="subtitle">A stocktake of the competitive advantages (and disadvantages) of Singapore's industry powerhouse Jurong Island with net zero on the horizon and Shell mulling an exit.</div>
+          </a>
+
+          <a class="card" href="https://www.businesstimes.com.sg/companies-markets/when-singapore-burns-hydrogen-prices-go-boom">
+            <img src="https://d2kxlefydm4hr1.cloudfront.net/image/businesstimes/19725540240f5f541b8c54c5abdf0b8cecf2ca80fd6078bf24639517d89c8efd?w=960&dpr=1&f=webp" alt="An artist's impression of Singapore's LNG Terminal on Jurong Island." />
+            <div>When Singapore burns hydrogen, prices go boom</div>
+            <div class="subtitle">A techno-economic breakdown of electricity pricing if Singapore's grid leaned on low-carbon hydrogen instead of natural gas.</div>
+          </a>
+
+          <a class="card" href="https://medium.com/@TODAYonline/confused-and-dejected-stateless-persons-plead-to-be-called-singaporeans-1f6787a8451b">
+            <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*uchzV7yYXuieo6W4CxD2jA.jpeg" alt="What are the challenges for those whose nationality is unknown in Singapore?" />
+            <div>Confused and dejected, stateless persons plead to be called Singaporeans</div>
+            <div class="subtitle">In 2016, this viral look at the plight of stateless persons in Singapore cast a light on systems that kept many in limbo for years, even decades. A number of those interviewed obtained their citizenship thereafter.</div>
+          </a>
+
+          <!-- <a class="card" href="#">
+            <video autoplay loop muted playsinline poster="https://placehold.co/800x450">
+              <source src="your-video.mp4" type="video/mp4" />
+            </video>
+            <div>Another project</div> -->
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+
+    <script>
+  // Auto-scroll each carousel
+  document.querySelectorAll(".card .carousel").forEach((carousel) => {
+    const slides = carousel.querySelectorAll("img");
+    if (slides.length <= 1) return;
+
+    let index = 0;
+    let timer = null;
+
+    function go(i) {
+      carousel.scrollTo({ left: i * carousel.clientWidth, behavior: "smooth" });
+    }
+
+    function start() {
+      timer = setInterval(() => {
+        index = (index + 1) % slides.length;
+        go(index);
+      }, 3000);
+    }
+
+    function stop() {
+      clearInterval(timer);
+      timer = null;
+    }
+
+    carousel.addEventListener("mouseenter", stop);
+    carousel.addEventListener("mouseleave", start);
+    carousel.addEventListener("touchstart", stop, { passive: true });
+    carousel.addEventListener("touchend", start);
+
+    start();
+  });
+
+  // Prevent the <a> click when the user is swiping the carousel
+  document.querySelectorAll(".card").forEach((card) => {
+    const carousel = card.querySelector(".carousel");
+    if (!carousel) return;
+
+    let dragged = false;
+    let startX = 0;
+
+    carousel.addEventListener("pointerdown", (e) => {
+      dragged = false;
+      startX = e.clientX;
+    });
+
+    carousel.addEventListener("pointermove", (e) => {
+      if (Math.abs(e.clientX - startX) > 10) dragged = true; // swipe threshold
+    });
+
+    card.addEventListener("click", (e) => {
+      if (dragged) {
+        e.preventDefault(); // don't follow link on swipe
+        dragged = false;
+      }
+    });
+  });
+</script>
+
+</html>
