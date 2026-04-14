@@ -91,6 +91,22 @@
         border-radius: 0.25rem;
       }
 
+      .card .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #9ca3af;
+      }
+
+      .card .tags span {
+        border: 1px solid #d1d5db;
+        border-radius: 3px;
+        padding: 0.15rem 0.4rem;
+      }
+
       .card .subtitle {
         font-size: 0.85rem;
         line-height: 1.35;
@@ -149,8 +165,20 @@
             <video autoplay loop muted playsinline>
               <source src="content/blob.mp4" type="video/mp4" />
             </video>
+            <div class="tags"><span>GeoPandas</span><span>LayerCake</span><span>Spatial Analysis</span></div>
             <div>Where Singapore's Voting Lines Keep Moving</div>
             <div class="subtitle">An exploration of Singapore's 2006-2025 electoral boundary data, using GIS spatial overlay to identify areas most affected by boundary changes and examine whether opposition-contested seats face more frequent redrawing.</div>
+          </a>
+
+          <a class="card" href="https://wongpeiting.github.io/peak-meme/">
+            <div class="carousel" aria-label="Peak meme analysis">
+            <img src="content/peak1.png" alt="Peak meme analysis" />
+            <img src="content/peak2.png" alt="Peak meme analysis" />
+            <img src="content/peak3.png" alt="Peak meme analysis" />
+            </div>
+            <div class="tags"><span>TikTok Scraping</span><span>Dataset Building</span><span>Scrollytelling</span></div>
+            <div>How the White House Hit Peak Meme</div>
+            <div class="subtitle">An analysis of the White House TikTok account's first 600 posts, documenting how official government communication has progressively blurred into internet entertainment — with airstrike footage repackaged as viral content, increasing profanity, and algorithmic engagement tactics.</div>
           </a>
 
           <a class="card" href="https://wongpeiting.github.io/study_in_budgets/">
@@ -160,6 +188,7 @@
             <img src="content/budget3.png" alt="Word count analysis" />
             <img src="content/budget4.png" alt="Close up of Budget promises vs asks chart" />
             </div>
+            <div class="tags"><span>LLM Classification</span><span>D3.js</span><span>Scrollytelling</span></div>
             <div>💼 A study in Budgets 💼</div>
             <div class="subtitle">An interactive scrollytelling project that incorporated LLM classification to tell the story of how Singapore's social compact has shifted based on what the government promises and what it asks of citizens and firms in Budget Statements between 1965 and 2026.</div>
           </a>
@@ -169,6 +198,7 @@
             <img src="content/parl1.png" alt="Parliament infographic" />
             <img src="content/parl2.png" alt="Participation-o-meter" />
             </div>
+            <div class="tags"><span>Methodology</span><span>Manual Data Collection</span></div>
             <div>More questions asked, more ministerial statements: Inside Singapore Parliament's record-setting 14th term</div>
             <div class="subtitle">A distillation of how People's Action Party backbenchers and opposition Members of Parliament performed at their jobs to question and debate, and how they did compared to past terms.</div>
           </a>
@@ -182,6 +212,7 @@
             <img src="content/battleground5.png" alt="Where Gen X and baby boomers are" />
             <img src="content/battleground6.png" alt="Where the young families are" />
             </div>
+            <div class="tags"><span>QGIS</span><span>Spatial Analysis</span><span>Government Data</span></div>
             <div>GE2025: Which constituency is the most 'heartland' and where are the first-time voters?</div>
             <div class="subtitle">A pre-election analysis of how battlegrounds shaped up, with stats collated less than 48 hours after electoral boundaries were redrawn.</div>
           </a>
@@ -195,51 +226,59 @@
             <img src="content/GE2025_results5.png" alt="Independents were more popular than some parties" />
             <img src="content/GE2025_results6.png" alt="Poorest results" />
             </div>
+            <div class="tags"><span>Data Analysis</span><span>Reporting</span></div>
             <div>GE2025: With a more discerning electorate, smaller opposition parties face an uncertain future</div>
             <div class="subtitle">A post-election analysis showing that Singapore is moving towards a two-party system, making the road ahead increasingly challenging for smaller players striving for a slice of the electoral pie.</div>
           </a>
 
           <a class="card" href="https://www.straitstimes.com/multimedia/graphics/2025/02/pritam-singh-trial-catchphrases/index.html">
             <img src="content/pritam_interactive1.png" alt="Pritam trial thumbnail" />
+            <div class="tags"><span>Court Reporting</span><span>Data Distillation</span><span>Narrative Design</span></div>
             <div>13 days, 13 phrases: How the Pritam trial unfolded</div>
             <div class="subtitle">Key exchanges in one of Singapore's most watched trial. A condensation of 677 pages of court transcripts, 352 pages of prosecution and defence submissions, and 150 pages of court verdict.</div>
           </a>
 
           <a class="card" href="https://wongpeiting.github.io/wtf_flat_alert_system/">
-            <div class="carousel" aria-label="Parliament analysis">
-            <img src=”content/wtf_radar1.png” alt=”A seismograph for the transactions that make you go &quot;WTF&quot;… as in What's This Flat?” />
-            <img src=”content/wtf_radar2.png” alt=”The city-state's newest home resale oddballs.” />
+            <div class="carousel" aria-label="WTF flat alert system">
+              <img src="content/wtf_radar1.png" alt="WTF flat alert seismograph" />
+              <img src="content/wtf_radar2.png" alt="Newest home resale oddballs" />
             </div>
+            <div class="tags"><span>Automation</span><span>Index Building</span><span>Datawrapper</span></div>
             <div>The WTF flat alert system 🐣</div>
             <div class="subtitle">A playful take at creating a useful site that updates itself daily to surface Singapore's newest home resale oddballs based on a self-devised algorithm. (The algorithm is a work-in-progress.)</div>
           </a>
 
           <a class="card" href="https://www.businesstimes.com.sg/international/singapores-top-students-gunning-courses-hot-sectors-analytics-food-science-and">
             <img src="content/talentflows.png" alt="Accountancy and chemical engineering no longer the preferred tracks at local universities" />
+            <div class="tags"><span>Data Analysis &amp; Visualisation</span><span>Reporting</span></div>
             <div>Singapore's top students gunning for courses in hot sectors of analytics, food science and environment</div>
             <div class="subtitle">An analysis of Singapore universities' indicative grade profiles to visualise the change in interest towards accountancy, chemical engineering and aerospace engineering - courses where prospective students once faced stiff competition for places.</div>
           </a>
 
           <a class="card" href="https://www.straitstimes.com/singapore/cappuccino-papaya-and-people-what-fuels-pope-francis-on-his-historic-12-day-asia-pacific-tour">
             <img src="https://cassette.sphdigital.com.sg/image/straitstimes/00becb55923b296f3904632c72999cd153d82da6cdbd16db2ab764c40d24fea0?w=900" alt="Pope Francis waving to the faithful after leading mass at the Esplanade of Tasitolu in Dili on Sept 10. PHOTO: AFP" />
+            <div class="tags"><span>Feature</span><span>Reporting</span></div>
             <div>Cappuccino, papaya and people: What fuels Pope Francis on his historic 12-day Asia-Pacific tour</div>
             <div class="subtitle">A scoop whilst onboard the papal flight as Pope Francis embarked on his historic 12-day Asia-Pacific tour in 2024. An insider look at how the then-87-year-old pontiff was managing the longest trip he has taken out of Vatican City.</div>
           </a>
 
           <a class="card" href="https://www.businesstimes.com.sg/opinion-features/jurong-island-search-new-miracle">
             <img src="content/bigboys.png" alt="At least 25 of the players on Jurong Island are among the world's 50 largest chemical companies, leading oil giants and tank terminal operators, or are these giants' units or joint ventures." />
+            <div class="tags"><span>Interactive</span><span>Data Gathering</span><span>Research</span><span>Reporting</span></div>
             <div>Jurong Island: In search of a new miracle</div>
             <div class="subtitle">A stocktake of the competitive advantages (and disadvantages) of Singapore's industry powerhouse Jurong Island with net zero on the horizon and Shell mulling an exit.</div>
           </a>
 
           <a class="card" href="https://www.businesstimes.com.sg/companies-markets/when-singapore-burns-hydrogen-prices-go-boom">
             <img src="https://d2kxlefydm4hr1.cloudfront.net/image/businesstimes/19725540240f5f541b8c54c5abdf0b8cecf2ca80fd6078bf24639517d89c8efd?w=960&dpr=1&f=webp" alt="An artist's impression of Singapore's LNG Terminal on Jurong Island." />
+            <div class="tags"><span>Research</span><span>Analysis</span><span>Reporting</span></div>
             <div>When Singapore burns hydrogen, prices go boom</div>
             <div class="subtitle">A techno-economic breakdown of electricity pricing if Singapore's grid leaned on low-carbon hydrogen instead of natural gas.</div>
           </a>
 
           <a class="card" href="https://medium.com/@TODAYonline/confused-and-dejected-stateless-persons-plead-to-be-called-singaporeans-1f6787a8451b">
             <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*uchzV7yYXuieo6W4CxD2jA.jpeg" alt="What are the challenges for those whose nationality is unknown in Singapore?" />
+            <div class="tags"><span>Investigative</span><span>Source Building</span><span>Feature Reporting</span></div>
             <div>Confused and dejected, stateless persons plead to be called Singaporeans</div>
             <div class="subtitle">In 2016, this viral look at the plight of stateless persons in Singapore cast a light on systems that kept many in limbo for years, even decades. A number of those interviewed obtained their citizenship thereafter.</div>
           </a>
@@ -248,8 +287,8 @@
             <video autoplay loop muted playsinline poster="https://placehold.co/800x450">
               <source src="your-video.mp4" type="video/mp4" />
             </video>
-            <div>Another project</div> -->
-          </a>
+            <div>Another project</div>
+          </a> -->
         </div>
       </div>
     </main>
